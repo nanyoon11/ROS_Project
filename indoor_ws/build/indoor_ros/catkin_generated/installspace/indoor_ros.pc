@@ -1,0 +1,8 @@
+prefix=/home/nanyoon/indoor_ws/install
+
+Name: indoor_ros
+Description: Description of indoor_ros
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,36 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/nanyoon/test_ws/devel/include/**",
+                "/home/nanyoon/catkin_ws/devel/include/**",
+                "/opt/ros/melodic/include/**",
+                "/home/nanyoon/catkin_ws/src/call_class/include/**",
+                "/home/nanyoon/test_ws/src/exercise/include/**",
+                "/home/nanyoon/indoor_ws/src/indoor_ros/include/**",
+                "/home/nanyoon/turtlebot_ws/src/turtlebot_package/kobuki_bumper2pc/include/**",
+                "/home/nanyoon/turtlebot_ws/src/kobuki_gazebo_plugins/include/**",
+                "/home/nanyoon/turtlebot_ws/src/kobuki_safety_controller/include/**",
+                "/home/nanyoon/catkin_ws/src/learning_tf/include/**",
+                "/home/nanyoon/catkin_ws/src/mobot_robot_urdf/include/**",
+                "/home/nanyoon/catkin_ws/src/psa_server/include/**",
+                "/home/nanyoon/catkin_ws/src/sample_class/include/**",
+                "/home/nanyoon/catkin_ws/src/simple_navigation_goals/include/**",
+                "/home/nanyoon/catkin_ws/src/test_robot/include/**",
+                "/home/nanyoon/catkin_ws/src/tutorial1/include/**",
+                "/home/nanyoon/catkin_ws/src/tutorial2/include/**",
+                "/usr/include/**"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++14"
+        }
+    ],
+    "version": 4
+}

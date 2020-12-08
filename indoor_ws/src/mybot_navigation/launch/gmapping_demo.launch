@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<launch>
+  <master auto="start"/>
+  <param name="/use_sim_time" value="true"/>
+  <!--- Run gmapping -->
+  
+  <arg name="custom_gmapping_launch_file" default="$(find mybot_navigation)/launch/includes/gmapping.launch.xml"/>
+  <include file="$(arg custom_gmapping_launch_file)">
+    <arg name="scan_topic"  value="scan" />
+    <arg name="base_frame"  value="base_link"/>
+    <arg name="odom_frame"  value="odom"/>
+  </include>
+
+  <!-- Show in Rviz   -->
+  <!-- <node name="rviz" pkg="rviz" type="rviz"/> -->
+  <arg name="rviz_file" default="$(find mybot_navigation)/rviz/rviz_navigation.rviz"/>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rviz_file)" required="true"/>
+
+</launch>

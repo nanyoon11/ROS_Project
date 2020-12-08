@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+    - Base      : isgmrobot
+    - 3d Sensor : kinect
+-->    
+<robot name="isgmrobot" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find mybot_description)/urdf/mybot.xacro"/>
+  <xacro:include filename="$(find mybot_description)/urdf/sensors/kinect.urdf.xacro"/>
+  
+  <xacro:sensor_kinect parent="base_link"/>
+</robot>

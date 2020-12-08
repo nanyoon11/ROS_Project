@@ -1,0 +1,20 @@
+{
+    "ros.distro": "melodic",
+    "python.autoComplete.extraPaths": [
+        "/home/nanyoon/test_ws/devel/lib/python2.7/dist-packages",
+        "/home/nanyoon/catkin_ws/devel/lib/python2.7/dist-packages",
+        "/opt/ros/melodic/lib/python2.7/dist-packages"
+    ],
+    "files.associations": {
+        "array": "cpp",
+        "limits": "cpp",
+        "bitset": "cpp",
+        "hash_map": "cpp",
+        "hash_set": "cpp",
+        "initializer_list": "cpp",
+        "string_view": "cpp",
+        "utility": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp"
+    }
+}

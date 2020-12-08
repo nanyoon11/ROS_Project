@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<robot>
+
+  <!-- for link -->
+  <gazebo reference="left_wheel"> 
+      <mu1 value="10000.0" />
+      <mu2 value="10000.0" />
+      <kp value="100000.0" />
+      <kd value="0.00001" />
+      <maxVel value="1.0" />
+      <minDepth value="0.0001" />
+  </gazebo>    
+
+  <gazebo reference="right_wheel">
+      <mu1 value="10000.0" />
+      <mu2 value="10000.0" />
+      <kp value="100000.0" />
+      <kd value="0.00001" />
+      <maxVel value="1.0" />
+      <minDepth value="0.0001" />
+  </gazebo>  
+
+  <gazebo reference="front_caster_visual">
+      <mu1 value="0.0" />
+      <mu2 value="0.0" />
+  </gazebo>   
+
+  <gazebo reference="back_caster_visual">
+      <mu1 value="0.0" />
+      <mu2 value="0.0" />
+  </gazebo>
+
+  <gazebo>
+    <plugin name="differential_drive_controller1" filename="libgazebo_ros_diff_drive.so">
+      <legacyMode>false</legacyMode>
+      <alwaysOn>true</alwaysOn>
+      <updateRate>10</updateRate>
+      <leftJoint>left_wheel_hinge</leftJoint>
+      <rightJoint>right_wheel_hinge</rightJoint>
+      <wheelSeparation>0.35</wheelSeparation>
+      <wheelDiameter>0.2</wheelDiameter>
+      <torque>1.5</torque>
+      <commandTopic>cmd_vel</commandTopic>
+      <odometryTopic>odom</odometryTopic>
+      <odometryFrame>odom</odometryFrame>
+      <robotBaseFrame>base_link</robotBaseFrame>
+
+      <publishWheelTF>false</publishWheelTF>
+			<publishWheelJointState>true</publishWheelJointState>
+    </plugin>
+  </gazebo>
+  <!-- <gazebo>
+    <plugin name="differential_drive_controller2" filename="libgazebo_ros_diff_drive.so">
+      <legacyMode>false</legacyMode>
+      <alwaysOn>true</alwaysOn>
+      <updateRate>10</updateRate>
+      <leftJoint>left_back_wheel_hinge</leftJoint>
+      <rightJoint>right_back_wheel_hinge</rightJoint>
+      <wheelSeparation>0.35</wheelSeparation>
+      <wheelDiameter>0.2</wheelDiameter>
+      <torque>1000</torque>
+      <commandTopic>cmd_vel</commandTopic>
+      <odometryTopic>odom</odometryTopic>
+      <odometryFrame>odom</odometryFrame>
+      <robotBaseFrame>base_link</robotBaseFrame>
+
+      <publishWheelTF>false</publishWheelTF>
+			<publishWheelJointState>true</publishWheelJointState>
+    </plugin>
+  </gazebo> -->
+
+  <gazebo reference="body_frame">
+    <material>Gazebo/Orange</material>
+  </gazebo>
+
+  <gazebo reference="left_front_wheel">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+
+  <gazebo reference="right_front_wheel">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+
+  <gazebo reference="left_back_wheel">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+
+  <gazebo reference="right_back_wheel">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+
+  <gazebo reference="front_caster_visual">
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <gazebo reference="back_caster_visual">
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <gazebo reference="head_link">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+
+  <gazebo reference="second_rect">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+
+  
+
+</robot>

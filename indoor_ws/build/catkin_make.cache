@@ -1,0 +1,2 @@
+indoor_gazebo:indoor_navigation:indoor_ros:mybot_description:mybot_gazebo:mybot_navigation:navigation_goals
+-DCATKIN_DEVEL_PREFIX=/home/nanyoon/indoor_ws/devel -DCMAKE_INSTALL_PREFIX=/home/nanyoon/indoor_ws/install -G Unix Makefiles
